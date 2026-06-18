@@ -1,0 +1,346 @@
+{
+  "happy": {
+    "emoji": "😊",
+    "color": "#FFD93D",
+    "gradient": "linear-gradient(135deg, #FFD93D 0%, #FF6B6B 100%)",
+    "message": "You're feeling happy! Here's some upbeat music to keep the vibe going.",
+    "playlists": [
+      {
+        "title": "Happy Hits!",
+        "artist": "Various Artists",
+        "cover": "🎵",
+        "url": "https://www.youtube.com/watch?v=ZbZSe6N_BXs",
+        "duration": "3:24"
+      },
+      {
+        "title": "Walking on Sunshine",
+        "artist": "Katrina & The Waves",
+        "cover": "☀️",
+        "url": "https://www.youtube.com/watch?v=iPUmE-tne5U",
+        "duration": "3:58"
+      },
+      {
+        "title": "Happy",
+        "artist": "Pharrell Williams",
+        "cover": "🎶",
+        "url": "https://www.youtube.com/watch?v=y6Sxv-sUYtM",
+        "duration": "3:53"
+      },
+      {
+        "title": "Good as Hell",
+        "artist": "Lizzo",
+        "cover": "💃",
+        "url": "https://www.youtube.com/watch?v=SmbmeOgWsqE",
+        "duration": "2:39"
+      },
+      {
+        "title": "Best Day of My Life",
+        "artist": "American Authors",
+        "cover": "🌈",
+        "url": "https://www.youtube.com/watch?v=Y66j_BUCBMY",
+        "duration": "3:14"
+      }
+    ]
+  },
+  "sad": {
+    "emoji": "😢",
+    "color": "#74b9ff",
+    "gradient": "linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%)",
+    "message": "It's okay to feel sad. Here's some soothing music to comfort you.",
+    "playlists": [
+      {
+        "title": "Someone Like You",
+        "artist": "Adele",
+        "cover": "🎹",
+        "url": "https://www.youtube.com/watch?v=hLQl3WQQoQ0",
+        "duration": "4:45"
+      },
+      {
+        "title": "Fix You",
+        "artist": "Coldplay",
+        "cover": "💙",
+        "url": "https://www.youtube.com/watch?v=k4V3Mo61fJM",
+        "duration": "4:55"
+      },
+      {
+        "title": "Let Her Go",
+        "artist": "Passenger",
+        "cover": "🌧️",
+        "url": "https://www.youtube.com/watch?v=RBumgq5yVrA",
+        "duration": "4:12"
+      },
+      {
+        "title": "Hurt",
+        "artist": "Johnny Cash",
+        "cover": "🎸",
+        "url": "https://www.youtube.com/watch?v=8AHCfZTRGiI",
+        "duration": "3:38"
+      },
+      {
+        "title": "The Night We Met",
+        "artist": "Lord Huron",
+        "cover": "🌙",
+        "url": "https://www.youtube.com/watch?v=KtlgYxa6BMU",
+        "duration": "3:28"
+      }
+    ]
+  },
+  "stressed": {
+    "emoji": "😰",
+    "color": "#55efc4",
+    "gradient": "linear-gradient(135deg, #55efc4 0%, #81ecec 100%)",
+    "message": "Take a deep breath. Here's some calming music to help you de-stress.",
+    "playlists": [
+      {
+        "title": "Weightless",
+        "artist": "Marconi Union",
+        "cover": "🧘",
+        "url": "https://www.youtube.com/watch?v=UfcAVejslrU",
+        "duration": "8:09"
+      },
+      {
+        "title": "Clair de Lune",
+        "artist": "Debussy",
+        "cover": "🌊",
+        "url": "https://www.youtube.com/watch?v=CvFH_6DNRCY",
+        "duration": "5:12"
+      },
+      {
+        "title": "River Flows in You",
+        "artist": "Yiruma",
+        "cover": "🎹",
+        "url": "https://www.youtube.com/watch?v=7maJOI3QMu0",
+        "duration": "3:45"
+      },
+      {
+        "title": "Spa Music Relaxation",
+        "artist": "Calm Collective",
+        "cover": "🍃",
+        "url": "https://www.youtube.com/watch?v=lFcSrYw-ARY",
+        "duration": "10:00"
+      },
+      {
+        "title": "Breathe Me",
+        "artist": "Sia",
+        "cover": "🕊️",
+        "url": "https://www.youtube.com/watch?v=SFGvmrJ5rjM",
+        "duration": "4:34"
+      }
+    ]
+  },
+  "calm": {
+    "emoji": "😌",
+    "color": "#a29bfe",
+    "gradient": "linear-gradient(135deg, #a29bfe 0%, #dfe6e9 100%)",
+    "message": "You're in a peaceful state. Here's some ambient music to match your calm.",
+    "playlists": [
+      {
+        "title": "An Ending (Ascent)",
+        "artist": "Brian Eno",
+        "cover": "🌌",
+        "url": "https://www.youtube.com/watch?v=It4WxQ6dnn0",
+        "duration": "4:18"
+      },
+      {
+        "title": "Nuvole Bianche",
+        "artist": "Ludovico Einaudi",
+        "cover": "☁️",
+        "url": "https://www.youtube.com/watch?v=4VR-6AS0-l4",
+        "duration": "5:57"
+      },
+      {
+        "title": "Sunset Lover",
+        "artist": "Petit Biscuit",
+        "cover": "🌅",
+        "url": "https://www.youtube.com/watch?v=wuCK-oiE3rM",
+        "duration": "3:42"
+      },
+      {
+        "title": "Gymnopédie No. 1",
+        "artist": "Erik Satie",
+        "cover": "🎼",
+        "url": "https://www.youtube.com/watch?v=S-Xm7s9eGxU",
+        "duration": "3:15"
+      },
+      {
+        "title": "Holocene",
+        "artist": "Bon Iver",
+        "cover": "🏔️",
+        "url": "https://www.youtube.com/watch?v=TWcyIpul8OE",
+        "duration": "5:36"
+      }
+    ]
+  },
+  "energetic": {
+    "emoji": "⚡",
+    "color": "#fd79a8",
+    "gradient": "linear-gradient(135deg, #fd79a8 0%, #e17055 100%)",
+    "message": "You're full of energy! Here's some high-tempo music to fuel your fire.",
+    "playlists": [
+      {
+        "title": "Thunderstruck",
+        "artist": "AC/DC",
+        "cover": "🎸",
+        "url": "https://www.youtube.com/watch?v=v2AC41dglnM",
+        "duration": "4:52"
+      },
+      {
+        "title": "Uptown Funk",
+        "artist": "Bruno Mars",
+        "cover": "🔥",
+        "url": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+        "duration": "4:30"
+      },
+      {
+        "title": "Stronger",
+        "artist": "Kanye West",
+        "cover": "💪",
+        "url": "https://www.youtube.com/watch?v=PsO6ZnUZI0g",
+        "duration": "5:12"
+      },
+      {
+        "title": "Can't Hold Us",
+        "artist": "Macklemore",
+        "cover": "🚀",
+        "url": "https://www.youtube.com/watch?v=2zNSgSzhBfM",
+        "duration": "4:35"
+      },
+      {
+        "title": "Levels",
+        "artist": "Avicii",
+        "cover": "🎧",
+        "url": "https://www.youtube.com/watch?v=_ovdm2yX4MA",
+        "duration": "3:19"
+      }
+    ]
+  },
+  "romantic": {
+    "emoji": "❤️",
+    "color": "#e84393",
+    "gradient": "linear-gradient(135deg, #e84393 0%, #fd79a8 100%)",
+    "message": "Love is in the air! Here's some romantic music for you.",
+    "playlists": [
+      {
+        "title": "Perfect",
+        "artist": "Ed Sheeran",
+        "cover": "💕",
+        "url": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
+        "duration": "4:23"
+      },
+      {
+        "title": "All of Me",
+        "artist": "John Legend",
+        "cover": "💗",
+        "url": "https://www.youtube.com/watch?v=450p7goxZqg",
+        "duration": "4:29"
+      },
+      {
+        "title": "Thinking Out Loud",
+        "artist": "Ed Sheeran",
+        "cover": "🌹",
+        "url": "https://www.youtube.com/watch?v=lp-EO5I60KA",
+        "duration": "4:41"
+      },
+      {
+        "title": "A Thousand Years",
+        "artist": "Christina Perri",
+        "cover": "💐",
+        "url": "https://www.youtube.com/watch?v=rtOvBOTyX00",
+        "duration": "4:45"
+      },
+      {
+        "title": "Make You Feel My Love",
+        "artist": "Adele",
+        "cover": "🎤",
+        "url": "https://www.youtube.com/watch?v=0put0_a--Ns",
+        "duration": "3:32"
+      }
+    ]
+  },
+  "angry": {
+    "emoji": "😤",
+    "color": "#d63031",
+    "gradient": "linear-gradient(135deg, #d63031 0%, #e17055 100%)",
+    "message": "Let it out! Here's some intense music to channel that energy.",
+    "playlists": [
+      {
+        "title": "Killing in the Name",
+        "artist": "Rage Against the Machine",
+        "cover": "🔥",
+        "url": "https://www.youtube.com/watch?v=bWXazVhlyxQ",
+        "duration": "5:13"
+      },
+      {
+        "title": "Break Stuff",
+        "artist": "Limp Bizkit",
+        "cover": "💥",
+        "url": "https://www.youtube.com/watch?v=ZpUYjpKg9KY",
+        "duration": "2:46"
+      },
+      {
+        "title": "Lose Yourself",
+        "artist": "Eminem",
+        "cover": "🎤",
+        "url": "https://www.youtube.com/watch?v=_Yhyp-_hX2s",
+        "duration": "5:26"
+      },
+      {
+        "title": "Bodies",
+        "artist": "Drowning Pool",
+        "cover": "⚡",
+        "url": "https://www.youtube.com/watch?v=04F4xlWSFh0",
+        "duration": "3:22"
+      },
+      {
+        "title": "In the End",
+        "artist": "Linkin Park",
+        "cover": "🎸",
+        "url": "https://www.youtube.com/watch?v=eVTXPUF4Oz4",
+        "duration": "3:36"
+      }
+    ]
+  },
+  "focused": {
+    "emoji": "🎯",
+    "color": "#0984e3",
+    "gradient": "linear-gradient(135deg, #0984e3 0%, #6c5ce7 100%)",
+    "message": "Time to lock in! Here's some focus-boosting music for deep work.",
+    "playlists": [
+      {
+        "title": "Lo-Fi Study Beats",
+        "artist": "ChilledCow",
+        "cover": "📚",
+        "url": "https://www.youtube.com/watch?v=jfKfPfyJRdk",
+        "duration": "∞"
+      },
+      {
+        "title": "Deep Focus",
+        "artist": "Brain.fm",
+        "cover": "🧠",
+        "url": "https://www.youtube.com/watch?v=jV3oVgjgEiE",
+        "duration": "60:00"
+      },
+      {
+        "title": "Experience",
+        "artist": "Ludovico Einaudi",
+        "cover": "🎹",
+        "url": "https://www.youtube.com/watch?v=_VONMkKkdf4",
+        "duration": "5:15"
+      },
+      {
+        "title": "Interstellar Theme",
+        "artist": "Hans Zimmer",
+        "cover": "🌠",
+        "url": "https://www.youtube.com/watch?v=UDVtMYqUAyw",
+        "duration": "4:09"
+      },
+      {
+        "title": "Alpha Waves Study Music",
+        "artist": "Concentration Music",
+        "cover": "🔬",
+        "url": "https://www.youtube.com/watch?v=WPni755-Krg",
+        "duration": "45:00"
+      }
+    ]
+  }
+}

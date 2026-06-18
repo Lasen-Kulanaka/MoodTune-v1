@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MoodTune – AI Mood-Based Music Recommender</title>
+    <meta name="description"
+        content="MoodTune uses AI to understand your emotional state and instantly recommends music playlists that improve focus, relaxation and productivity." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+
+<body>
+
+    <!-- ── Animated background particles ─────────────────────── -->
+    <div class="bg-particles" id="bgParticles"></div>
+
+    <!-- ── Main App Container ────────────────────────────────── -->
+    <div class="app-wrapper">
+
+        <!-- ── Header / Navbar ───────────────────────────────── -->
+        <header class="header" id="header">
+            <div class="header-inner">
+                <div class="logo" id="logo">
+                    <img src="/static/logo.png" alt="MoodTune Logo" class="logo-image" />
+                    <span class="logo-text">MoodTune</span>
+                </div>
+                <nav class="nav">
+                    <button class="nav-btn active" id="navHome" data-view="home">Home</button>
+                    <button class="nav-btn" id="navHistory" data-view="history">Mood History</button>
+                    <button class="nav-btn premium-btn" id="navPremium" data-view="premium">✨ Premium</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- ══════════════════════════════════════════════════════
+             VIEW: HOME
+             ══════════════════════════════════════════════════════ -->
+        <main class="view active" id="viewHome">
+
+            <!-- Hero Section -->
+            <section class="hero" id="heroSection">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        How are you feeling
+                        <span class="gradient-text">right now?</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Tell MoodTune how you feel and we'll find the perfect music for your mood.
+                    </p>
+
+                    <!-- Mood Input Area -->
+                    <div class="input-area" id="inputArea">
+                        <div class="input-wrapper">
+                            <textarea id="moodInput" class="mood-input"
+                                placeholder="e.g. I am stressed because of exams..." rows="3"
+                                maxlength="500"></textarea>
+                            <span class="char-count" id="charCount">0 / 500</span>
+                        </div>
+                        <button class="analyze-btn" id="analyzeBtn">
+                            <span class="btn-text">Analyze My Mood</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                        <p class="usage-counter" id="usageCounter"></p>
+                    </div>
+
+                    <!-- Quick Mood Chips -->
+                    <div class="quick-moods" id="quickMoods">
+                        <span class="chip-label">Quick pick:</span>
+                        <button class="mood-chip" data-text="I'm feeling really happy and excited today!">😊
+                            Happy</button>
+                        <button class="mood-chip" data-text="I'm feeling sad and a bit lonely right now">😢 Sad</button>
+                        <button class="mood-chip" data-text="I'm stressed because of work deadlines">😰
+                            Stressed</button>
+                        <button class="mood-chip" data-text="I'm feeling calm and at peace">😌 Calm</button>
+                        <button class="mood-chip" data-text="I'm pumped up and ready to work out!">⚡ Energetic</button>
+                        <button class="mood-chip" data-text="I need to focus and study for my exams">🎯 Focused</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Loading Spinner -->
+            <section class="loading-section hidden" id="loadingSection">
+                <div class="loader">
+                    <div class="loader-ring"></div>
+                    <p class="loader-text">Analyzing your mood...</p>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="results-section hidden" id="resultsSection">
+                <div class="results-inner">
+
+                    <!-- Dynamic mood display (single or multi-mood) -->
+                    <div id="moodDisplay"></div>
+
+                    <!-- Playlist Header -->
+                    <div class="playlist-header">
+                        <h3 class="playlist-title">Recommended for you</h3>
+                        <button class="try-again-btn" id="tryAgainBtn">← Try Another Mood</button>
+                    </div>
+
+                    <!-- Dynamic playlist sections per mood -->
+                    <div id="playlistSections"></div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ══════════════════════════════════════════════════════
+             VIEW: MOOD HISTORY
+             ══════════════════════════════════════════════════════ -->
+        <main class="view" id="viewHistory">
+            <section class="history-section">
+                <div class="history-header">
+                    <h2 class="section-title">Mood History</h2>
+                    <p class="section-subtitle">Track how your mood changes over time</p>
+                    <button class="clear-history-btn" id="clearHistoryBtn">Clear All</button>
+                </div>
+
+                <!-- Mood Stats Bar -->
+                <div class="mood-stats" id="moodStats"></div>
+
+                <!-- History Timeline -->
+                <div class="history-timeline" id="historyTimeline">
+                    <p class="empty-state" id="emptyHistory">No mood entries yet. Go analyze your first mood!</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- ══════════════════════════════════════════════════════
+             VIEW: PREMIUM
+             ══════════════════════════════════════════════════════ -->
+        <main class="view" id="viewPremium">
+            <section class="premium-section">
+                <div class="premium-card">
+                    <div class="premium-badge">✨ PREMIUM</div>
+                    <h2 class="premium-title">Unlock the full MoodTune experience</h2>
+                    <p class="premium-price">
+                        <span class="price-amount">Rs. 300</span>
+                        <span class="price-period">/month</span>
+                    </p>
+
+                    <ul class="premium-features">
+                        <li>
+                            <span class="feature-icon">♾️</span>
+                            <div>
+                                <strong>Unlimited Analyses</strong>
+                                <p>No daily limits – analyze your mood anytime</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="feature-icon">🎵</span>
+                            <div>
+                                <strong>Personalized Playlists</strong>
+                                <p>AI-curated playlists that learn your taste</p>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <span class="feature-icon">📊</span>
+                            <div>
+                                <strong>Mood History Dashboard</strong>
+                                <p>Track and visualize your emotional patterns</p>
+                            </div>
+                        </li> -->
+                        <li>
+                            <span class="feature-icon">🔔</span>
+                            <div>
+                                <strong>Smart Notifications</strong>
+                                <p>Get mood check-in reminders throughout the day</p>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <button class="upgrade-btn" id="upgradeBtn">
+                        Upgrade to Premium
+                    </button>
+
+                    <div class="free-plan">
+                        <h3>Free Plan</h3>
+                        <p>5 mood analyses per day • Basic playlists • Mood history (limited)</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- ── Footer ────────────────────────────────────────── -->
+        <footer class="footer" id="footer">
+            <p>MoodTune &copy; 2026 &mdash; AI-powered mood music recommendations</p>
+        </footer>
+    </div>
+
+    <!-- ── Toast Notification ─────────────────────────────────── -->
+    <div class="toast hidden" id="toast">
+        <span class="toast-icon" id="toastIcon"></span>
+        <span class="toast-text" id="toastText"></span>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
