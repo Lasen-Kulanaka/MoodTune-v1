@@ -1,7 +1,7 @@
 {
   "happy": {
     "emoji": "😊",
-    "color": "#FFD93D",
+    "color": "#242a2f",
     "gradient": "linear-gradient(135deg, #FFD93D 0%, #FF6B6B 100%)",
     "message": "You're feeling happy! Here's some upbeat music to keep the vibe going.",
     "playlists": [
@@ -44,7 +44,7 @@
   },
   "sad": {
     "emoji": "😢",
-    "color": "#74b9ff",
+    "color": "#000000",
     "gradient": "linear-gradient(135deg, #74b9ff 0%, #a29bfe 100%)",
     "message": "It's okay to feel sad. Here's some soothing music to comfort you.",
     "playlists": [
@@ -87,7 +87,7 @@
   },
   "stressed": {
     "emoji": "😰",
-    "color": "#55efc4",
+    "color": "#242a2f",
     "gradient": "linear-gradient(135deg, #55efc4 0%, #81ecec 100%)",
     "message": "Take a deep breath. Here's some calming music to help you de-stress.",
     "playlists": [
@@ -130,7 +130,7 @@
   },
   "calm": {
     "emoji": "😌",
-    "color": "#a29bfe",
+    "color": "#914AD3",
     "gradient": "linear-gradient(135deg, #a29bfe 0%, #dfe6e9 100%)",
     "message": "You're in a peaceful state. Here's some ambient music to match your calm.",
     "playlists": [
@@ -173,7 +173,7 @@
   },
   "energetic": {
     "emoji": "⚡",
-    "color": "#fd79a8",
+    "color": "#000000",
     "gradient": "linear-gradient(135deg, #fd79a8 0%, #e17055 100%)",
     "message": "You're full of energy! Here's some high-tempo music to fuel your fire.",
     "playlists": [
@@ -216,7 +216,7 @@
   },
   "romantic": {
     "emoji": "❤️",
-    "color": "#e84393",
+    "color": "#ffffff",
     "gradient": "linear-gradient(135deg, #e84393 0%, #fd79a8 100%)",
     "message": "Love is in the air! Here's some romantic music for you.",
     "playlists": [
@@ -259,7 +259,7 @@
   },
   "angry": {
     "emoji": "😤",
-    "color": "#d63031",
+    "color": "#000000",
     "gradient": "linear-gradient(135deg, #d63031 0%, #e17055 100%)",
     "message": "Let it out! Here's some intense music to channel that energy.",
     "playlists": [
@@ -302,7 +302,7 @@
   },
   "focused": {
     "emoji": "🎯",
-    "color": "#0984e3",
+    "color": "#1F2EFF",
     "gradient": "linear-gradient(135deg, #0984e3 0%, #6c5ce7 100%)",
     "message": "Time to lock in! Here's some focus-boosting music for deep work.",
     "playlists": [

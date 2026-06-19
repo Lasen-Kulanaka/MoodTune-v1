@@ -485,7 +485,7 @@ body {
 
 .mood-card-message {
     font-size: 15px;
-    color: var(--text-secondary);
+    color:#12121a;
     max-width: 420px;
     margin: 0 auto;
     position: relative;

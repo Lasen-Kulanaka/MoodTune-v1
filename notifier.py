@@ -37,8 +37,8 @@ APP_NAME           = "MoodTune"
 POLL_INTERVAL      = 5
 
 # Notification interval range (seconds) while premium is active
-MIN_INTERVAL       = 1 * 60    # 1 minute
-MAX_INTERVAL       = 2 * 60    # 2 minutes
+MIN_INTERVAL       = 5 * 60    # 5 minute
+MAX_INTERVAL       = 10 * 60    # 10 minutes
 
 # Shared state file (same directory as this script / app.py)
 _BASE_DIR          = os.path.dirname(os.path.abspath(__file__))
